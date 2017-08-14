@@ -27,6 +27,7 @@
         $.when(pt, obv).done(function(patient, obv) {
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
+          var maritalStatus = patient.maritalStatus;
           var dob = new Date(patient.birthDate);
           var day = dob.getDate();
           var monthIndex = dob.getMonth() + 1;
@@ -83,6 +84,7 @@
       fname: {value: ''},
       lname: {value: ''},
       gender: {value: ''},
+      maritalStatus: {value: ''},
       birthdate: {value: ''},
       age: {value: ''},
       height: {value: ''},
@@ -148,6 +150,7 @@
     $('#fname').html(p.fname);
     $('#lname').html(p.lname);
     $('#gender').html(p.gender);
+    $('#maritalStatus').html(p.maritalStatus);
     $('#birthdate').html(p.birthdate);
     $('#age').html(p.age);
     $('#height').html(p.height);
