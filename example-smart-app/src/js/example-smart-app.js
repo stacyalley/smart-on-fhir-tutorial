@@ -51,7 +51,7 @@
           var p = defaultPatient();
           p.birthdate = dobStr;
           p.gender = gender;
-          p.maritalStatus = maritalStatus;
+          p.maritalStatus = 'hello';//maritalStatus;
           p.fname = fname;
           p.lname = lname;
           p.age = parseInt(calculateAge(dob));
