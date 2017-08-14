@@ -28,6 +28,7 @@
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
           var maritalStatus = patient.maritalStatus;
+          var identifier = patient.identifier;
           var dob = new Date(patient.birthDate);
           var day = dob.getDate();
           var monthIndex = dob.getMonth() + 1;
@@ -52,6 +53,7 @@
           p.birthdate = dobStr;
           p.gender = gender;
           p.maritalStatus = maritalStatus;
+          p.identifier = identifier;
           p.fname = fname;
           p.lname = lname;
           p.age = parseInt(calculateAge(dob));
@@ -84,6 +86,7 @@
     return {
       fname: {value: ''},
       lname: {value: ''},
+      identifier: {value: ''},
       gender: {value: ''},
       maritalStatus: {value: ''},
       birthdate: {value: ''},
@@ -150,6 +153,7 @@
     $('#loading').hide();
     $('#fname').html(p.fname);
     $('#lname').html(p.lname);
+    $('#identifier').html(p.identifier);
     $('#gender').html(p.gender);
     $('#maritalStatus').html(p.maritalStatus);
     $('#birthdate').html(p.birthdate);
