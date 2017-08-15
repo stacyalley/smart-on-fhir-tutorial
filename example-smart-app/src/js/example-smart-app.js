@@ -153,7 +153,7 @@
     $('#loading').hide();
     $('#fname').html(p.fname);
     $('#lname').html(p.lname);
-    $('#identifier').html(p.identifier);
+    $('#identifier').html(p.identifier.value);
     $('#gender').html(p.gender);
     $('#maritalStatus').html(p.maritalStatus.text);
     $('#birthdate').html(p.birthdate);
