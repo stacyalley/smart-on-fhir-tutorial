@@ -155,7 +155,7 @@
     $('#lname').html(p.lname);
     $('#identifier').html(p.identifier);
     $('#gender').html(p.gender);
-    $('#maritalStatus').html(p.maritalStatus);
+    $('#maritalStatus').html(p.maritalStatus.text);
     $('#birthdate').html(p.birthdate);
     $('#age').html(p.age);
     $('#height').html(p.height);
